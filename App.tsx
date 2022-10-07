@@ -1,12 +1,16 @@
-import * as React from 'react';
+import React from 'react';
+import 'react-native-gesture-handler';
+
 import {NavigationContainer} from '@react-navigation/native';
 
-import {Text} from 'react-native';
+import {StackNavigator} from './src/navigator/StackNavigator';
+import {MenuLateralBasico} from './src/navigator/MenuLateralBasico';
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Text>App</Text>
+      {/* <StackNavigator /> */}
+      <MenuLateralBasico />
     </NavigationContainer>
   );
 };
