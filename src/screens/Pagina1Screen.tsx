@@ -1,7 +1,6 @@
-import {StackScreenProps} from '@react-navigation/stack';
 import React from 'react';
-import {Button, Text, View} from 'react-native';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import {Button, Text, View, TouchableOpacity} from 'react-native';
+import {StackScreenProps} from '@react-navigation/stack';
 import {styles} from '../theme/appThemes';
 
 interface Props extends StackScreenProps<any, any> {}
