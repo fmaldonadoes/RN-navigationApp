@@ -1,7 +1,8 @@
 import React from 'react';
 import {Button, Text, View, TouchableOpacity} from 'react-native';
 import {StackScreenProps} from '@react-navigation/stack';
-import {styles} from '../theme/appThemes';
+import {styles, colores} from '../theme/appThemes';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 interface Props extends StackScreenProps<any, any> {}
 
@@ -24,6 +25,7 @@ export const Pagina1Screen = ({navigation}: Props) => {
               nombre: 'Pedro',
             })
           }>
+          <Icon name="man-outline" size={32} color={'white'} />
           <Text style={styles.botonGrandeTexto}>Pedro</Text>
         </TouchableOpacity>
 
@@ -32,10 +34,11 @@ export const Pagina1Screen = ({navigation}: Props) => {
           onPress={() =>
             navigation.navigate('PersonaScreen', {
               id: 2,
-              nombre: 'Jaime',
+              nombre: 'Susana',
             })
           }>
-          <Text style={styles.botonGrandeTexto}>Jaime</Text>
+          <Icon name="woman-outline" size={32} color={'white'} />
+          <Text style={styles.botonGrandeTexto}>Susana</Text>
         </TouchableOpacity>
       </View>
     </View>
